@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #26701f; /* Verde principal */
+    --secondary-color: #8bc34a; /* Verde secundário */
+    --text-color: #ffffff; /* Cor do texto em branco */
+  }
+  
+  /* Definindo estilos globais */
+  body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
