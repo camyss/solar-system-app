@@ -22,7 +22,7 @@ const DetalhesCalculo = ({ calculations }) => {
       } catch (error) {
         console.error('Error fetching document:', error);
       } finally {
-        setIsLoading(false);
+        setIsLoading(false); // Loading done
       }
     };
     getCalculation();
