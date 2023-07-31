@@ -29,25 +29,26 @@ const DetalhesCalculo = ({ calculations }) => {
   }, [id]);
 
   if (isLoading) {
-    return <div>Carregando...</div>;
+    return <div className="flex justify-center items-center h-screen text-2xl">Carregando...</div>;
   }
 
   if (!calculation) {
-    return <div>Não foi possível encontrar o resultado.</div>;
+    return <div className="flex justify-center items-center h-screen text-2xl">Não foi possível encontrar o resultado.</div>;
   }
 
   return (
-    <div>
-      <h2>Detalhes do Cálculo</h2>
+    <div className="max-w-md mx-auto p-8 bg-white shadow-md rounded-md">
+      <h2 className="text-3xl font-bold mb-4">Detalhes do Cálculo</h2>
       <ul>
-        <li>Quantidade de inversores: {calculation.numberInverters}</li>
-        <li>Quantidade de placas: {calculation.numberPanels}</li>
-        <li>Potência do painel utilizado (Watts): {calculation.panelPower}</li>
-        <li>Área útil necessária para a instalação (metros quadrados): {calculation.requiredArea}</li>
-        <li>Comprimento de estrutura necessário (metros): {calculation.requiredLength}</li>
+        <li className="mb-2">Quantidade de inversores: {calculation.numberInverters}</li>
+        <li className="mb-2">Quantidade de placas: {calculation.numberPanels}</li>
+        <li className="mb-2">Potência do painel utilizado (Watts): {calculation.panelPower}</li>
+        <li className="mb-2">Área útil necessária para a instalação (metros quadrados): {calculation.requiredArea}</li>
+        <li className="mb-2">Comprimento de estrutura necessário (metros): {calculation.requiredLength}</li>
       </ul>
     </div>
   );
 };
+
 
 export default DetalhesCalculo;

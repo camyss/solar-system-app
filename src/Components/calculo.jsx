@@ -67,56 +67,56 @@ const Calculo = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
+    <div className="max-w-md mx-auto p-8">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <label className="block">
           Potência Total (kW):
           <input
             type="number"
             value={totalPower}
             onChange={(e) => setTotalPower(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded-md"
           />
         </label>
-        <br />
-        <label>
+        <label className="block">
           Potência do Painel (W):
           <input
             type="number"
             value={panelPower_W}
             onChange={(e) => setPanelPower_W(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded-md"
           />
         </label>
-        <br />
-        <label>
+        <label className="block">
           Largura do Painel (m):
           <input
             type="number"
             value={panelWidth}
             onChange={(e) => setPanelWidth(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded-md"
           />
         </label>
-        <br />
-        <label>
+        <label className="block">
           Altura do Painel (m):
           <input
             type="number"
             value={panelHeight}
             onChange={(e) => setPanelHeight(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded-md"
           />
         </label>
-        <br />
-        <label>
+        <label className="block">
           Tipo de Telhado:
           <input
             type="text"
             value={roofType}
             onChange={(e) => setRoofType(e.target.value)}
+            className="block w-full p-2 border border-gray-300 rounded-md"
           />
         </label>
-        <br />
-        <button type="submit">Calcular</button>
+        <button className="w-full p-3 bg-violet-900 text-white font-bold rounded-full" type="submit">Calcular</button>
       </form>
-      <h2>Resultados:</h2>
+      <h2 className="text-3xl font-bold mt-8">Resultados:</h2>
       <ul>
         {calculations.map((calculation) => (
           <li key={calculation.id}>
@@ -125,7 +125,9 @@ const Calculo = () => {
         ))}
       </ul>
     </div>
+
   );
+
 };
 
 export default Calculo;
