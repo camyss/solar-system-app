@@ -24,6 +24,17 @@ npm start
 ```
 A aplicação estará disponível em http://localhost:3000.
 
+Para realizar o cálculo pelo terminal, acesse a pasta Utils
+```bash
+cd src
+cd Utils
+```
+E informe os dados de entrada
+```bash
+node solarSystem.jsx totalPower panelPower panelWidth panelHeight roofType
+```
+
+
 ## Dependências
 A aplicação utiliza as seguintes dependências:
 ```bash
