@@ -37,7 +37,7 @@ const DetalhesCalculo = ({ calculations }) => {
   }
 
   return (
-    <div className="max-w-md mx-auto p-8 bg-white shadow-md rounded-md">
+    <div className="max-w-md mx-auto p-8 bg-white shadow-md rounded-md text-black">
       <h2 className="text-3xl font-bold mb-4">Detalhes do Cálculo</h2>
       <ul>
         <li className="mb-2">Quantidade de inversores: {calculation.numberInverters}</li>
