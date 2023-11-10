@@ -1,4 +1,4 @@
-# Holu Solar System App
+# Solar System App
 
 ## Instalação
 
